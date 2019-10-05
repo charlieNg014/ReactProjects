@@ -1,0 +1,36 @@
+.owl-item {
+    width: 540px;
+    margin-right: 30px
+}
+
+.owl-stage {
+    transform: translate3d(-3990px, 0px, 0px);
+    transition: all 0s ease 0s;
+    width: 4560px
+}
+
+.owl-prev {
+    display: none;
+}
+
+.owl-next {
+    display: none;
+}
+
+.pb-10 text-white {
+    color: black;
+}
+
+.footer {
+    background-color: black;
+    text-color: white;
+    padding: 25px 0;
+    text-align: center;
+    color: whitesmoke;
+    margin-bottom: -120px;
+    margin-top: 40px;
+}
+
+#contact {
+    margin-bottom: -40px;
+}
