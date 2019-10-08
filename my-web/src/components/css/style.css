@@ -34,3 +34,44 @@
 #contact {
     margin-bottom: -40px;
 }
+
+
+/* Style for Services page */
+
+.masthead {
+    height: 300px;
+}
+
+.intro-heading {
+    font-weight: 700;
+    line-height: 75px;
+    margin-bottom: 50px;
+    font-family: Montserrat, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    color: azure;
+    margin-top: -250px;
+}
+
+.subtitle {
+    font-size: 25px;
+}
+
+.btn-primary {
+    background-color: transparent;
+    border-color: transparent;
+    margin-top: -45px;
+}
+
+.btn-xl {
+    font-size: 15px;
+    padding: 8px 15px;
+}
+
+
+/* Style for Contact form */
+
+.submitbtn {
+    margin-top: 50px;
+    background-color: white;
+    border-color: white;
+    color: black;
+}

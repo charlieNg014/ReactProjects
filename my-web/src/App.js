@@ -12,50 +12,48 @@ import Contact from './components/Pages/Contact';
 import Client from './components/Common/Client';
 
 function App() {
-    return ( 
-      <div >
-        <Router >
-            <PageWrapper >
-            <Route
-              exact = {true}
-              path = "/"
-              component = { Home }
-            />
+    return ( <
+        div >
+        <
+        Router >
+        <
+        PageWrapper >
+        <
+        Route exact = { true }
+        path = "/"
+        component = { Home }
+        />
 
-            { /* {display the service on the landing page} */ } 
-            <Route 
-              path = "/services"
-              component = { Services }
-            />
+        { /* {display the service on the landing page} */ } <
+        Route exact = { true }
+        path = "/services"
+        component = { Services }
+        />
 
 
-            {/* {display the product on the page} */}
-            <Route
-              path = "/portfolio"
-              component = { Portfolio }
-            />
+        { /* {display the product on the page} */ } <
+        Route path = "/portfolio"
+        component = { Portfolio }
+        />
 
-            { /* {display the about on the landing page} */ } 
-            <Route 
-              path = "/timeline"
-              component = { Timeline }
-            />
-            
+        { /* {display the about on the landing page} */ } <
+        Route path = "/timeline"
+        component = { Timeline }
+        />
 
-            { /* {display the team on the landing page} */ } 
-            <Route 
-              path = "/team"
-              component = { Team }
-            />
 
-            {/* //display the contacr */}
-            <Route
-              path = "/contact"
-              component = {Contact}
-            />
-            </PageWrapper> 
-          </Router> 
-          </div>
+        { /* {display the team on the landing page} */ } <
+        Route path = "/team"
+        component = { Team }
+        />
+
+        { /* //display the contacr */ } <
+        Route path = "/contact"
+        component = { Contact }
+        /> <
+        /PageWrapper>  <
+        /Router>  <
+        /div>
     );
 }
 

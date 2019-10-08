@@ -4,6 +4,10 @@ import SingleService from './SingleService';
 //Re-usable items
 import Footer from '../Pages/Footer';
 import Contact from '../Pages/Contact';
+import Header from '../Common/Header';
+import image from './assets/img/baking.jpeg';
+
+
 const services = [{
         title: 'Birthday',
         description: 'A cake for small birthday party for your kids or just friends',
@@ -26,7 +30,16 @@ const services = [{
 class Services extends Component {
     render() {
         return ( 
-            
+                <div>
+                {this.props.noHeader || <Header 
+                    subtitle = "Services"
+                    buttonText = "Check out our products"
+                    link = "/Portfolio"
+                    showButton ={true}
+                    image = {image}
+                />   }
+                
+                {/* display the service  */}
                 <section className = "page-section" id="services" >
                     <div className = "container" >
                     <div className = "row" >
@@ -35,18 +48,24 @@ class Services extends Component {
                         <h3 className = "section-subheading text-muted" > Enjoy our lovely cakes! < /h3> 
                     </div > 
                     </div> 
-                    <div className = "row text-center" > {
-                        services.map((service, index) => {
-                            return <SingleService {...service }
-                            key = { index }
-                            />
-                        })
+                    <div className = "row text-center" > 
+                    {/* map through the array */}
+                    {services.map((service, index) => {
+                        return <SingleService {...service }
+                        key = { index }
+                        />
+                    })
                     }
                     </div> 
                     </div > 
-                    {/* <Contact />
-                    <Footer /> */}
                 </section>
+
+                {this.props.noContact || <Contact />}
+                {this.props.noFooter || <Footer />}
+                </div>
+                
+            
+                
           
 
             

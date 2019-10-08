@@ -5,36 +5,39 @@ import Header from '../Common/Header';
 import Services from '../Common/Services';
 import Portfolio from '../Common/Portfolio';
 import Timeline from '../Common/Timeline';
+import About from '../Pages/About';
 import Team from '../Common/Team';
 import Contact from '../Pages/Contact';
 import Footer from '../Pages/Footer';
 // import Client from '../Common/Client';
+import img from '../Common/assets/img/bakingcareer.jpg';
+
 
 class Home extends Component {
     render() {
         return ( 
-            <div >
-                <Header 
-                title = 'WHENEVER I BAKE. BAKE WITH MY HEART'
+            <div>
+                <Header
+                // Add any props you want to modify the header 
+                // title = 'WHENEVER I BAKE. BAKE WITH MY HEART'
                 subtitle = "LOVE WITH BAKING"
-                buttonText = "CHECK OUT PRODUCT"
-                link = "/services"
-                showButton =''
-                // image = ''
+                buttonText = "CHECK OUT OUR SERVICE"
+                link = '/services'
+                showButton = { true }
+                image = { img }
                 />
 
-                <Services />
-                <Portfolio />
-                <Timeline />
-                <Team />
-                {/* <Client /> */}
-                <Contact />
+                <Services  noHeader noContact noFooter/>
+                <Portfolio noHeader noContact noFooter/>
+                <Timeline  noHeader noContact noFooter/>
+                <Team noHeader noContact noFooter/>  
+                <Contact noHeader noFooter/>
                 <Footer />
-           
+
             </div>
 
-            
-            
+
+
         )
     }
 }

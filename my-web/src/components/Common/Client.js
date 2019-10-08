@@ -3,6 +3,7 @@ import ClientItem from './ClientItem';
 // import '../css/style.css';
 import img from './assets/img/review.jpg';
 
+//create a single array to store all of the elements
 const clientreview = [{
     name: 'Charlie Nguyen',
     description: 'A beautiful watermelon cake I have ever had',
@@ -13,6 +14,7 @@ const clientreview = [{
 class Client extends Component {
     render() {
         return(
+            //One code to display Client 
             <section className="review-area section-gap relative">
                     <div className="overlay overlay-bg"></div>
                     <div className="container">
@@ -28,6 +30,8 @@ class Client extends Component {
                             <div className="active-review-carusel owl-carousel owl-theme owl-loaded">
                                 <div className="owl-stage-outer">
                                     <div className="owl-stage">
+                                        
+                                    {/* using map to take all of the elements from the array */}
                                     {clientreview.map((item, index) => {
                                         return <ClientItem {...item } key = { index } />
                                     })}

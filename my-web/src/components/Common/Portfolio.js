@@ -1,5 +1,13 @@
 import React, { Component } from 'react';
+
+//Re-usable items
 import PortfolioItem from './PortfolioItem';
+import Footer from '../Pages/Footer';
+import Contact from '../Pages/Contact';
+import Header from '../Common/Header';
+
+//import images
+import image from './assets/img/baking.jpeg';
 import img1 from './assets/img/01-thumbnail.jpg';
 import img2 from './assets/img/02-thumbnail.jpg';
 import img3 from './assets/img/03-thumbnail.jpg';
@@ -47,30 +55,35 @@ const porfolio = [{
 
 class Portfolio extends Component {
     render() {
-        return ( <
-            section className = "bg-light page-section"
-            id = "portfolio" >
-            <
-            div className = "container" >
-            <
-            div className = "row" >
-            <
-            div className = "col-lg-12 text-center" >
-            <
-            h2 className = "section-heading text-uppercase" > Portfolio < /h2> <
-            h3 className = "section-subheading text-muted" > My lovely cakes are displayed below < /h3> <
-            /div> <
-            /div> <
-            div className = "row" > {
-                porfolio.map((item, index) => {
-                    return <PortfolioItem {...item }
-                    key = { index }
-                    />
-                })
-            } <
-            /div> <
-            /div> <
-            /section>
+        return ( 
+            <div>
+                {this.props.noHeader || <Header 
+                    subtitle = "PORTFOLIO"
+                    buttonText = "ORDER NOW"
+                    link = "/"
+                    showButton ={true}
+                    image = {image}
+                />   }
+
+                <section className = "bg-light page-section" id = "portfolio" >
+                    <div className = "container">
+                    <div className = "row" >
+                    <div className = "col-lg-12 text-center" >
+                        <h2 className = "section-heading text-uppercase" > Portfolio </h2> 
+                        <h3 className = "section-subheading text-muted" > My lovely cakes are displayed below </h3> 
+                        </div> 
+                    </div> 
+                    {/* mapping through the element of an array */}
+                    <div className = "row" > 
+                    {porfolio.map((item, index) => {return <PortfolioItem {...item } key = {index}/>})
+                    } 
+                    </div> 
+                    </div> 
+                </section>
+
+                {this.props.noContact || <Contact />}
+                {this.props.noFooter || <Footer />}
+            </div>
         )
     }
 }
