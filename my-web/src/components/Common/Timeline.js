@@ -109,7 +109,7 @@ class Timeline extends Component {
                 </section>
 
                 {this.props.noContact || <Contact />}
-                {this.props.noFooter || <Footer />}
+                {/* {this.props.noFooter || <Footer />} */}
             </div>
         )
     }
