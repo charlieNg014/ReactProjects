@@ -1,0 +1,32 @@
+:root {
+    --mainBlue: blue;
+    --lightBlue: lightblue;
+    --mainWhite: white;
+    --mainDark: black;
+    --mainYellow: yellow;
+}
+
+body {
+    font-family: "Hepta Slap", sans-serif !important;
+    background: var(--mainWhite) !important;
+    color: var(--mainDark) !important;
+}
+
+.text-title {
+    font-family: 'Roboto', cursive;
+    letter-spacing: 0.3 rem;
+    text-transform: uppercase;
+}
+
+text-blue {
+    color: var (--mainBlue);
+}
+
+.btn-black {
+    background: transparent;
+    text-transform: capitalize;
+    font-size: 0.8rem !important;
+    color: var(--mainDark);
+    border-radius: 0 !important;
+    border: 0.1rem solid var(--mainDark) !important;
+}
