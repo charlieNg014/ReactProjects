@@ -11,6 +11,7 @@ const ProductWrapper = styled.div`
   .card {
     border-color: transparent;
     transition: all 1s linear;
+    background: rgba(247, 247, 247);
   }
   .cart-footer {
     background: rgba(247, 247, 247);
@@ -29,6 +30,7 @@ const ProductWrapper = styled.div`
   .img-container {
     position: relative;
     overflow: hidden;
+    margin-left: -5px;
   }
   // zoom out in image
   .card-img-top {
@@ -57,13 +59,19 @@ const ProductWrapper = styled.div`
     corlor: var(--mainBlue);
     cursor: pointer;
   }
+  .cart-text {
+    margin-left: 10px;
+  }
+  .cart-price {
+    margin-right: 5px;
+  }
 ` 
 
 class Product extends Component {
   render() {
     const {id, title, img, price, inCart} = this.props.product;
     return (
-      <ProductWrapper className="col-9 mx-auto col-md-4 col-lg-3 my-3">
+      <ProductWrapper className="col-9 mx-auto col-md-4 col-lg-4 my-3">
         <div className="card">
           <ProductConsumer>
           {value => ( 
@@ -74,7 +82,7 @@ class Product extends Component {
 
               {/* display the image on the screen */}
               <Link to="/details" >
-                <img src ={img} alt="product" className="card-img-top" />
+                <img src ={img} style={{width: '8rem', height: '7rem'}} alt="product" className="card-img-top" />
               </Link>
 
               {/* button here */}
@@ -103,14 +111,14 @@ class Product extends Component {
           {/* cart footer */}
           <div className="cart-footer d-flex justify-content-between">
             {/* Name of products */}
-            <p className="align-self-center mb-0">
+            <p className="cart-text align-self-center mb-0">
               {title}
             </p>
 
             {/* price */}
-            <h5 className="text-blue font-italic mb-0">
+            <h5 className="cart-price text-blue font-italic mb-0">
               <span className="mr-1">
-                $ {price}
+                ${price}
               </span>
             </h5>
           </div>
