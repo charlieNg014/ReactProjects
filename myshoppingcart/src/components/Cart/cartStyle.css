@@ -1,0 +1,50 @@
+.container-fluid {
+    display: inline;
+    font-size: 15px;
+}
+
+.text-uppercase {
+    margin-left: 100px;
+}
+
+.cartitem {
+    margin-left: 69px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.c-title {
+    margin-top: 35px;
+    margin-left: 90px;
+    text-align: center;
+}
+
+.c-price {
+    margin-top: 35px;
+    margin-left: 70px;
+    position: relative;
+    text-align: left;
+}
+
+.c-quantity {
+    margin-top: 30px;
+    margin-left: 80px;
+}
+
+.q-btn:hover {
+    background-color: darkgrey;
+}
+
+.c-icon {
+    margin-top: 35px;
+    margin-left: 95px;
+}
+
+.c-icon:hover {
+    color: red;
+}
+
+.c-total {
+    margin-top: 35px;
+    margin-left: 135px;
+}

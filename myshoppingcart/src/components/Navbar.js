@@ -1,26 +1,33 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import logo from "../logo.svg";
-import styled from "styled-components";
+// import logo from "../logo.svg";
+// import styled from "styled-components";
 import { ButtonContainer } from "./Button";
+import "../css/style.css";
+import logo1 from "../css/home.svg";
 
 //variables
-const NavWrapper = styled.nav`
-  background: aliceblue;
-  .nav-link {
-    color: black !important;
-    font-size: 1.3 rem;
-    text-transform: capitalize;
-  }
-`;
+// const NavWrapper = styled.nav`
+//   background: aliceblue;
+//   .nav-link {
+//     color: black !important;
+//     font-size: 1.3 rem;
+//     text-transform: capitalize;
+//   }
+// `;
 
 class Navbar extends Component {
   render() {
     return (
-      <NavWrapper className="navbar- navbar-expand-sm navbar -dark px-sm-5">
+      <div className="navbar- navbar-expand-sm navbar -dark px-sm-5">
         {" "}
         <Link to="/">
-          <img src={logo} alt="store" className="navbar-brand" />
+          <img
+            src={logo1}
+            style={{ width: "2rem", height: "3rem" }}
+            alt="store"
+            className="navbar-brand"
+          />
         </Link>{" "}
         {/* unorder list */}{" "}
         <ul className="navbar-nav align-items-center">
@@ -32,17 +39,16 @@ class Navbar extends Component {
         </ul>{" "}
         {/* Cart */}{" "}
         <Link to="/cart" className="ml-auto">
-          <ButtonContainer >
+          <ButtonContainer className="nav-btn">
             <div className="nav-btn">
               <span className="mr-2">
                 <i className="fas fa-cart-plus" />
               </span>
               My Cart{" "}
-            </div>
-           
+            </div>{" "}
           </ButtonContainer>{" "}
         </Link>{" "}
-      </NavWrapper>
+      </div>
     );
   }
 }

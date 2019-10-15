@@ -82,6 +82,7 @@ class ProductProvider extends Component {
         const product = tempCart[index];
         product.count = product.count + 1;
         product.total = product.count * product.price;
+        product.total = parseFloat(product.total.toFixed(2));
 
         this.setState(() => {
             return {
@@ -104,6 +105,7 @@ class ProductProvider extends Component {
         } else {
             product.count = product.count - 1;
             product.total = product.count * product.price;
+            product.total = parseFloat(product.total.toFixed(2));
             this.setState(() => {
                 return {
                     cart: [...tempCart]

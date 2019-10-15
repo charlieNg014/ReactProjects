@@ -1,0 +1,140 @@
+/* Style for Navbar  */
+
+.navbar {
+    background: aliceblue;
+}
+
+.nav-link {
+    color: black !important;
+    font-size: 1.3 rem;
+    text-transform: capitalize;
+}
+
+
+/* Style for Details.js  */
+
+.main-text {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.right-button {
+    margin-left: 20px;
+    background-color: azure;
+}
+
+.left-button {
+    background-color: gainsboro;
+}
+
+.img-fluid {
+    margin-top: 10px;
+}
+
+
+/* CSS for Product.js */
+
+.card {
+    border-color: transparent;
+    transition: all 1s linear;
+    background: rgba(247, 247, 247);
+}
+
+.cart-footer {
+    background: rgba(247, 247, 247);
+    border-top: transparent;
+    transition: all 1s linear;
+}
+
+&:hover {
+    .card {
+        border: 0.04rem solid rgba(0, 0, 0, 0.2);
+        box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+    }
+    .cart-footer {
+        background: rgba(247, 247, 247);
+    }
+}
+
+.img-container {
+    position: relative;
+    overflow: hidden;
+    margin-left: -5px;
+}
+
+
+/* zoom out in image */
+
+.card-img-top {
+    transition: all 1s linear;
+}
+
+.img-container:hover .card-img-top {
+    transform: scale(1.2);
+}
+
+.cart-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0.2rem 0.4rem;
+    background: var(--lightBlue);
+    border: none;
+    color: var(--mainWhite);
+    font-size: 1rem;
+    border-radius: 0.5 0 0 0;
+    transform: translate(100%, 100%);
+}
+
+.img-container:hover .cart-btn {
+    transform: translate(0, 0);
+    transition: all 1s linear;
+}
+
+.cart-btn:hover {
+    color: var(--mainBlue);
+    cursor: pointer;
+}
+
+.cart-text {
+    margin-left: 10px;
+}
+
+.cart-price {
+    margin-right: 5px;
+}
+
+
+/* Style for Modal  */
+
+.modal-design {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#modal {
+    background: var(--mainWhite);
+    height: 380px;
+}
+
+.text {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    margin-top: 8px;
+    margin-right: 150px;
+}
+
+.first-line {
+    display: inline;
+}
+
+.icon {
+    margin-right: -170px;
+}
