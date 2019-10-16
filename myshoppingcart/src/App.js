@@ -10,21 +10,26 @@ import Navbar from './components/Navbar';
 import ProductList from './components/ProductList';
 import Details from './components/Details';
 import Cart from './components/Cart';
-import Default from './components/Default';
+import About from './components/hcomponents/About';
+import Home from "./components/Home";
 
 
 class App extends Component {
   render() {
     return (
     <React.Fragment>
-      <Navbar />
+     <Navbar />
       <Switch>
-        <Route exact path="/" component = {ProductList} /> 
+        <Route exact path="/" component = {Home}/>
+        <Route path="/product" component = {ProductList} /> 
         <Route path="/details" component = {Details} />
         <Route path="/cart" component = {Cart} />
-        <Route component = {Default} />
+        <Route path="/about" component ={About} />
+        {/* <Route component = {Default} /> */}
       </Switch>
+      {/* <About /> */}
       <Modal />
+      
     </React.Fragment>
     );
   }
