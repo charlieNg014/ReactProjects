@@ -1,6 +1,7 @@
 /* Style for Navbar  */
 
-.navbar {
+
+/* .navbar {
     background: aliceblue;
     font-size: 12px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -16,15 +17,16 @@
     font-size: 1.3 rem;
     text-transform: capitalize;
     margin-left: -10px;
-}
+} */
 
 
 /* Style for Home  */
 
-.intro-lead-in {
-    font-size: 25px;
+
+/* .intro-lead-in {
+    font-size: 27px;
     margin-top: 30px;
-    margin-left: 180px;
+    margin-left: 220px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -41,9 +43,9 @@
 }
 
 .btn {
-    color: royalblue;
+    color: red;
     background-color: yellow;
-}
+} */
 
 
 /* Style for Details.js  */

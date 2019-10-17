@@ -1,0 +1,140 @@
+/* Style for PageWrapper  */
+
+.navbar {
+    position: fixed;
+    background-color: chocolate;
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar .main-text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: black;
+    color: black;
+}
+
+.navbar-nav {
+    color: black;
+    font-size: 15px;
+    text-transform: capitalize;
+    margin-left: -18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* Style for Header  */
+
+.masthead {
+    margin-top: 50px;
+    text-align: center;
+    background-color: azure;
+    height: 240px;
+    padding-top: 10px;
+}
+
+.intro-lead-in {
+    font-size: 27px;
+    margin-top: 25px;
+    margin-left: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.intro-heading {
+    font-size: 50px;
+    margin-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 40px;
+}
+
+.center-button {
+    margin-top: 10px;
+    margin-left: -90px;
+}
+
+.btn {
+    color: red;
+    background-color: yellow;
+}
+
+
+/* Style for Services  */
+
+.service-con {
+    height: 380px;
+    ;
+}
+
+.section-heading {
+    margin-top: 50px;
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+.section-subheading {
+    margin-left: 90px;
+    font-size: 15px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+
+.text-service {
+    margin-left: -80px;
+    padding-left: 20px;
+    margin-right: -80px;
+}
+
+
+/* Style for Single Service  */
+
+.service-heading {
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+
+/* Style for porfolio  */
+
+.portfolio-item {
+    padding-left: 20px;
+    text-align: center;
+}
+
+.portfolio-icon:hover {
+    color: orange;
+}
+
+
+/* Style for Team  */
+
+.fab {
+    font-size: 25px;
+    color: blue;
+}
+
+.fab:hover {
+    color: crimson;
+}
+
+
+/* Style for Contact  */
+
+.contact-con {
+    background-color: beige;
+    height: 400px;
+}
+
+#sendMessageButton {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+
+/* Style for footer  */
+
+.social-buttons {
+    margin-top: 15px;
+}
+
+.quicklinks {
+    margin-top: 10px;
+}

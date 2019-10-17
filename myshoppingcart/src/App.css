@@ -7,9 +7,9 @@
 }
 
 body {
-    font-family: "Hepta Slap", sans-serif !important;
-    background: var(--mainWhite) !important;
-    color: var(--mainDark) !important;
+    font-family: "Hepta Slap", sans-serif;
+    background: var(--mainWhite);
+    color: var(--mainDark);
 }
 
 .text-title {
