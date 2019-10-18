@@ -4,14 +4,14 @@ import "./landingPageStyle.css";
 class Footer extends Component {
   render() {
     return (
-      <footer class="footer text-center">
+      <footer
+        class="footer text-center"
+        style={{ height: `${this.props.height}` }}
+      >
         <div class="container">
           <div class="row align-items-center">
             <div class="col-md-4">
-              <span class="copyright">
-                {" "}
-                Copyright by Charlie Nguyen{" "}
-              </span>{" "}
+              <span class="copyright"> Copyright by Charlie Nguyen </span>{" "}
             </div>{" "}
             <div class="col-md-4">
               <ul class="list-inline social-buttons">

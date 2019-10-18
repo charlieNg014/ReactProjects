@@ -8,8 +8,6 @@ import Team from "./hcomponents/Common/Team";
 import Contact from "./hcomponents/Common/Contact";
 import Footer from "./hcomponents/Common/Footer";
 
-
-
 class Home extends Component {
   render() {
     return (
@@ -21,14 +19,14 @@ class Home extends Component {
           link="/product"
           showButton={true}
           image={image}
+          height="240px"
         />{" "}
-
-        <Services noHeader/>
-        <Portfolio noHeader noServices />
-        <About noHeader />
-        <Team noHeader />
-        <Contact />
-        <Footer />
+        <Services noHeader noContact noFooter />
+        <Portfolio noHeader noContact noFooter />
+        <About noHeader noContact noFooter />
+        <Team noHeader noContact noFooter />
+        <Contact noHeader noFooter />
+        <Footer height="40px" />
       </div>
     );
   }

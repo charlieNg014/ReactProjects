@@ -21,6 +21,10 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
+.nav-btn {
+    border: transparent;
+}
+
 
 /* Style for Header  */
 
@@ -28,7 +32,7 @@
     margin-top: 50px;
     text-align: center;
     background-color: azure;
-    height: 240px;
+    height: 150px;
     padding-top: 10px;
 }
 
@@ -52,8 +56,8 @@
 }
 
 .btn {
-    color: red;
-    background-color: yellow;
+    color: rgb(48, 48, 168);
+    background-color: beige;
 }
 
 
@@ -91,6 +95,11 @@
     font-size: 25px;
 }
 
+.service-icon:hover {
+    color: gold;
+    zoom: 1.1;
+}
+
 
 /* Style for porfolio  */
 
@@ -99,20 +108,29 @@
     text-align: center;
 }
 
-.portfolio-icon:hover {
-    color: orange;
+.portfolio-img {
+    border: 1px solid;
+}
+
+.portfolio-caption {
+    margin-top: 10px;
 }
 
 
 /* Style for Team  */
 
 .fab {
-    font-size: 25px;
-    color: blue;
+    font-size: 20px;
+    color: white;
+    border-radius: 100%;
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
 }
 
 .fab:hover {
-    color: crimson;
+    background-color: gold;
 }
 
 
@@ -120,12 +138,13 @@
 
 .contact-con {
     background-color: beige;
-    height: 400px;
+    height: 390px;
 }
 
 #sendMessageButton {
     margin-left: 20px;
     margin-top: 20px;
+    background-color: gold;
 }
 
 
@@ -137,4 +156,17 @@
 
 .quicklinks {
     margin-top: 10px;
+}
+
+
+/* Style for About  */
+
+.timeline-panel {
+    width: 300px;
+    margin-top: -100px;
+}
+
+.timeline-inverted {
+    text-align: right;
+    margin-left: 400px;
 }
