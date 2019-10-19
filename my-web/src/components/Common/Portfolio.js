@@ -90,6 +90,7 @@ class Portfolio extends Component {
               {porfolio.map((item, index) => {
                 return <PortfolioItem {...item} key={index} />;
               })}{" "}
+              
               <Modal />
             </div>{" "}
           </div>{" "}

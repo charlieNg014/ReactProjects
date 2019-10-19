@@ -25,8 +25,8 @@ class Modal extends Component {
                   />
                   <div className="modal-text text-lg-center">
                     <h2 className="cakename ">{detailProduct.title}</h2>
-                    <h4 className="cakedes ">{detailProduct.subtitle}</h4>
-                    <div>
+                    <h4 className="cakedes text-center">{detailProduct.subtitle}</h4>
+                    <div className="button">
                       <button
                         className="exit-btn text-center"
                         onClick={() => {

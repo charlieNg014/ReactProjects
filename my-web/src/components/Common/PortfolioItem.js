@@ -16,18 +16,16 @@ class PortfolioItem extends Component {
                 data-toggle="modal"
                 href="#portfolioModal1"
               >
-                <div className="portfolio-hover" onClick={() => {
-                        //get the product of each item whe click
-                        // getItem(this.props.id);
-                        openModal(this.props.id);
-                      }}>
+                <div
+                  className="portfolio-hover"
+                  onClick={() => {
+                    //get the product of each item whe click
+                    // getItem(this.props.id);
+                    openModal(this.props.id);
+                  }}
+                >
                   <div className="portfolio-hover-content">
-                    <i
-                      className="fas fa-plus fa-3x"
-                      
-                    >
-                      {" "}
-                    </i>{" "}
+                    <i className="fas fa-plus fa-3x"> </i>{" "}
                   </div>{" "}
                 </div>{" "}
                 <img
@@ -43,7 +41,7 @@ class PortfolioItem extends Component {
                   {" "}
                   {this.props.subtitle}{" "}
                 </p>{" "}
-                <button
+                {/* <button
                   className="card-btn quantity-btn"
                   disabled={false}
                   onClick = {() => {
@@ -66,7 +64,7 @@ class PortfolioItem extends Component {
                   }}
                 >
                   +
-                </button>
+                </button> */}
               </div>{" "}
             </div>
           );

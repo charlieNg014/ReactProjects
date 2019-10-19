@@ -22,15 +22,12 @@ body {
 /* Style for modal  */
 
 .my-modal {
-    position: fixed;
-    margin-top: -180px;
-    left: 0;
-    right: 0;
+    position: flex;
     background: whitesmoke;
-    display: flex;
+    margin-top: -880px;
     align-items: center;
     justify-content: center;
-    height: 320px;
+    height: 660px;
 }
 
 #modal {
@@ -42,12 +39,14 @@ body {
 }
 
 .img-modal {
-    margin-left: 20px;
+    margin-left: 210px;
     margin-top: 20px;
     height: 180px;
 }
 
 .modal-text {
+    margin-top: 20px;
+    margin-left: 150px;
     text-align: center;
 }
 
@@ -61,8 +60,11 @@ body {
 .cakedes {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-left: 50px;
-    margin-top: -10px;
     font-size: 20px;
+}
+
+.button {
+    width: 400px;
 }
 
 .exit-btn,
@@ -80,7 +82,7 @@ body {
     background-color: #4eb5f1;
     text-align: center;
     transition: all 0.2s;
-    margin-left: 35px;
+    margin-left: 45px;
 }
 
 .exit-btn:hover {
