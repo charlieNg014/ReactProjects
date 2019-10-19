@@ -5,11 +5,9 @@ import Header from '../Common/Header';
 import Services from '../Common/Services';
 import Portfolio from '../Common/Portfolio';
 import Timeline from '../Common/Timeline';
-import About from '../Pages/About';
 import Team from '../Common/Team';
 import Contact from '../Pages/Contact';
 import Footer from '../Pages/Footer';
-// import Client from '../Common/Client';
 import img from '../Common/assets/img/bakingcareer.jpg';
 
 
@@ -21,20 +19,20 @@ class Home extends Component {
                 // Add any props you want to modify the header 
                 // title = 'WHENEVER I BAKE. BAKE WITH MY HEART'
                 subtitle = "LOVE WITH BAKING"
-                buttonText = "CHECK OUT OUR SERVICE"
-                link = '/services'
+                buttonText = "SHOP NOW"
+                link = '/shoppingcart'
                 showButton = { true }
                 image = { img }
                 />
-
                 <Services  noHeader noContact noFooter/>
                 <Portfolio noHeader noContact noFooter/>
                 <Timeline  noHeader noContact noFooter/>
                 <Team noHeader noContact noFooter/>  
                 <Contact noHeader noFooter/>
                 <Footer />
-
             </div>
+
+            
 
 
 
